@@ -1,3 +1,4 @@
+// Optional
 var productsList: [String?] = ["볼펜", "텀블러", "다이어리", "에코백", "머그컵", "후드집업"]
 
 // !
