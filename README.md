@@ -37,6 +37,6 @@
 ###### 👨‍👩‍👦‍ 참여자 : Hemg, hoon, Serena, 비모
 
 #### [금주 실험 주제🧑🏻‍🔬] **Type** <br/>
-[WIki URL]()
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek02%5D-Type)
 
 ---
