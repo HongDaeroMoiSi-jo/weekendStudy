@@ -40,3 +40,11 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek02%5D-Type)
 
 ---
+
+### 📅 2023.05.13 (토) Week#3
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **MVC** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek03%5D-MVC)
+
+---
