@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k5J-0D-7xo">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k5J-0D-7xo">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,9 +12,9 @@
         <!--등록-->
         <scene sceneID="6cm-jK-n7h">
             <objects>
-                <viewController id="k5J-0D-7xo" customClass="ViewController" customModule="Experiment_MVC_KVO_NotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k5J-0D-7xo" customClass="ViewController" customModule="Experiment_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cUl-28-3Xq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-h1-fUV">
@@ -62,7 +63,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="지금 등록하기"/>
                                 <connections>
-                                    <action selector="hitRegisterButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="RjL-Op-i4O"/>
+                                    <action selector="hitRegisterButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="Uj8-Y4-rVQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-hr-JFy">
@@ -99,7 +100,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="등록 확인하기"/>
                                 <connections>
-                                    <action selector="hitCheckButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="MDb-9A-blI"/>
+                                    <action selector="hitCheckButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="pxG-sE-B8z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,10 +109,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="등록" id="wvB-cG-y7t"/>
                     <connections>
-                        <outlet property="nameLabel" destination="IQv-od-aqc" id="oXx-TZ-d2w"/>
-                        <outlet property="nameTextField" destination="kyH-h1-fUV" id="VL2-0D-ZPh"/>
-                        <outlet property="phoneNumberLabel" destination="695-BK-uot" id="lkb-6A-DSJ"/>
-                        <outlet property="phoneNumberTextField" destination="02K-4W-2ex" id="wTy-Lg-QgE"/>
+                        <outlet property="nameLabel" destination="IQv-od-aqc" id="wPN-Wb-jkY"/>
+                        <outlet property="nameTextField" destination="kyH-h1-fUV" id="dSO-Dh-LYc"/>
+                        <outlet property="phoneNumberLabel" destination="695-BK-uot" id="RG4-Oe-Sym"/>
+                        <outlet property="phoneNumberTextField" destination="02K-4W-2ex" id="nh9-Zn-Yim"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nW-ZH-GWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
