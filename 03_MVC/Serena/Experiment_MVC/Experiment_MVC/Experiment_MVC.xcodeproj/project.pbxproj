@@ -14,6 +14,7 @@
 		CC7CBF062701A2F7001839B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7CBF052701A2F7001839B1 /* Assets.xcassets */; };
 		CC7CBF092701A2F7001839B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7CBF072701A2F7001839B1 /* LaunchScreen.storyboard */; };
 		D25B4E3A2A0F28420013B114 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B4E392A0F28420013B114 /* NotificationCenter.swift */; };
+		D26186B32A16726C00BB685E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26186B22A16726C00BB685E /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CC7CBF082701A2F7001839B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC7CBF0A2701A2F7001839B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25B4E392A0F28420013B114 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		D26186B22A16726C00BB685E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CC7CBEFE2701A2F4001839B1 /* SceneDelegate.swift */,
 				CC7CBF002701A2F4001839B1 /* ViewController.swift */,
 				D25B4E392A0F28420013B114 /* NotificationCenter.swift */,
+				D26186B22A16726C00BB685E /* UserInfo.swift */,
 				CC7CBF0A2701A2F7001839B1 /* Info.plist */,
 			);
 			path = Experiment_MVC;
@@ -152,6 +155,7 @@
 				CC7CBF012701A2F4001839B1 /* ViewController.swift in Sources */,
 				CC7CBEFD2701A2F4001839B1 /* AppDelegate.swift in Sources */,
 				CC7CBEFF2701A2F4001839B1 /* SceneDelegate.swift in Sources */,
+				D26186B32A16726C00BB685E /* UserInfo.swift in Sources */,
 				D25B4E3A2A0F28420013B114 /* NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
