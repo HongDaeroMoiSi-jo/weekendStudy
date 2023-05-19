@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iVl-4e-8VS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="0.63422542810000004" green="0.51760834460000005" blue="0.3684726357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="신상품 구매 페이지로 이동"/>
                                 <connections>
-                                    <segue destination="CBv-V7-3GI" kind="presentation" modalPresentationStyle="fullScreen" id="mVj-UP-4Lq"/>
+                                    <segue destination="CBv-V7-3GI" kind="show" id="mVj-UP-4Lq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByG-Vd-NTB">
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950.7246376811595" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2860.8695652173915" y="137.94642857142856"/>
         </scene>
         <!--Buying View Controller-->
         <scene sceneID="dab-2e-pgu">
@@ -104,7 +104,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vz-0n-9qI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733.3333333333335" y="137.94642857142856"/>
+            <point key="canvasLocation" x="3643.4782608695655" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KO4-X9-zU8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iVl-4e-8VS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wYW-vF-NZx">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wsz-To-qig"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRv-qV-LjF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
