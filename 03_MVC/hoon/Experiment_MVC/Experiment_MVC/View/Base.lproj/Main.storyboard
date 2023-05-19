@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-h1-fUV">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="홍길동" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-h1-fUV">
                                 <rect key="frame" x="114" y="196" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -30,7 +30,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02K-4W-2ex">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="010-****-****" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02K-4W-2ex">
                                 <rect key="frame" x="114" y="253" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -63,7 +63,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="지금 등록하기"/>
                                 <connections>
-                                    <action selector="hitRegisterButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="RjL-Op-i4O"/>
+                                    <action selector="hitRegisterButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="u7J-hP-kjX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-hr-JFy">
@@ -100,7 +100,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="등록 확인하기"/>
                                 <connections>
-                                    <action selector="hitCheckButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="MDb-9A-blI"/>
+                                    <action selector="hitCheckButton:" destination="k5J-0D-7xo" eventType="touchUpInside" id="zny-KO-4A5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,10 +109,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="등록" id="wvB-cG-y7t"/>
                     <connections>
-                        <outlet property="nameLabel" destination="IQv-od-aqc" id="oXx-TZ-d2w"/>
-                        <outlet property="nameTextField" destination="kyH-h1-fUV" id="VL2-0D-ZPh"/>
-                        <outlet property="phoneNumberLabel" destination="695-BK-uot" id="lkb-6A-DSJ"/>
-                        <outlet property="phoneNumberTextField" destination="02K-4W-2ex" id="wTy-Lg-QgE"/>
+                        <outlet property="nameLabel" destination="IQv-od-aqc" id="JRh-hI-GMW"/>
+                        <outlet property="nameTextField" destination="kyH-h1-fUV" id="rfN-tE-pV3"/>
+                        <outlet property="phoneNumberLabel" destination="695-BK-uot" id="wiR-8o-XnS"/>
+                        <outlet property="phoneNumberTextField" destination="02K-4W-2ex" id="DAc-Sv-XEt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nW-ZH-GWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
