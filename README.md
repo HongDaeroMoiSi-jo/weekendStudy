@@ -48,3 +48,11 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek03%5D-MVC)
 
 ---
+
+### 📅 2023.05.20 (토) Week#4
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **Singleton Pattern, View State Method** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek04%5D-Singleton-Pattern,-View-State-Method)
+
+---
