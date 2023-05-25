@@ -56,3 +56,11 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek04%5D-Singleton-Pattern,-View-State-Method)
 
 ---
+
+### 📅 2023.05.27 (토) Week#5
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **UML** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek05%5D-UML)
+
+---
