@@ -17,8 +17,7 @@ class PointManager {
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var numberLabel: UILabel!
-    
+    @IBOutlet weak var numberLabel: UILabel
     
 //    init() {
 //        super.init()
@@ -56,7 +55,7 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        numberLabel.text = "\(PointManager.shared.point)" // 뷰가 나타날때 업뎃 시키기용
+        numberLabel.text = "\(PointManager.shared.point)" // 뷰가 나타날때 업뎃 시키기용
         print("11111=====  main  viewWillAppear")
 
     }
