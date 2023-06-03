@@ -65,3 +65,11 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek05%5D-UML)
 
 ---
+
+### 📅 2023.06.03 (토) Week#6
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **SOLID** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek06%5D-SOLID)
+
+---
