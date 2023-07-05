@@ -73,3 +73,19 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek06%5D-SOLID)
 
 ---
+
+### 📅 2023.06.10 (토) Week#7
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **고차함수** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek07%5D-%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98)
+
+---
+
+### 📅 2023.07.01 (토) Week#8
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **TableView, JSON** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek08%5D-TableView,-JSON)
+
+---
