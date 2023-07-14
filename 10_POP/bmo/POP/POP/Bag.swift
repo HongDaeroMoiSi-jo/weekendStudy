@@ -11,4 +11,8 @@ struct Bag {
     mutating func put(item: Portable) {
         items.append(item)
     }
+    
+    func whatsInMyBag() {
+        print(items)
+    }
 }
