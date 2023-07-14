@@ -8,7 +8,7 @@
 typealias WattPerHour = Int
 typealias Watt = Int
 
-struct MacBook {
+struct MacBook: Portable {
     let wattPerHour: WattPerHour = 65
     var currentBattery: WattPerHour
     let maxBattery: WattPerHour = 100
@@ -22,7 +22,7 @@ struct MacBook {
     }
 }
 
-struct Charger: Chargeable {
+struct Charger: Chargeable, Portable {
     var maximumWattPerHour: WattPerHour
     
     func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour {
@@ -43,3 +43,18 @@ let 맥북 = MacBook(currentBattery: 50)
 맥북.chargeBattery(charger: 아이패드충전기)
 맥북.chargeBattery(charger: 맥북충전기1)
 맥북.chargeBattery(charger: 맥북충전기2)
+
+//MARK: - STEP 3
+protocol Portable {}
+
+struct Bag {
+    private var items: [Portable] = []
+    
+    mutating func put(item: Portable) {
+        items.append(item)
+    }
+}
+
+var gucciBag = Bag()
+gucciBag.put(item: 맥북)
+gucciBag.put(item: 맥북충전기1)
