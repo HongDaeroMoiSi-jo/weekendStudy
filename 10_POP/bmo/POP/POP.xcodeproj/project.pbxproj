@@ -11,6 +11,7 @@
 		CBDB5E552A6185490076E536 /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB5E542A6185490076E536 /* Chargeable.swift */; };
 		CBDB5E572A6191F20076E536 /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB5E562A6191F20076E536 /* MacBook.swift */; };
 		CBDB5E5B2A6213C40076E536 /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB5E5A2A6213C40076E536 /* Charger.swift */; };
+		CBDB5E5D2A62166F0076E536 /* Porterble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB5E5C2A62166F0076E536 /* Porterble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		CBDB5E542A6185490076E536 /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
 		CBDB5E562A6191F20076E536 /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
 		CBDB5E5A2A6213C40076E536 /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+		CBDB5E5C2A62166F0076E536 /* Porterble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Porterble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				CBDB5E542A6185490076E536 /* Chargeable.swift */,
 				CBDB5E562A6191F20076E536 /* MacBook.swift */,
 				CBDB5E5A2A6213C40076E536 /* Charger.swift */,
+				CBDB5E5C2A62166F0076E536 /* Porterble.swift */,
 			);
 			path = POP;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 				CBDB5E572A6191F20076E536 /* MacBook.swift in Sources */,
 				CBDB5E5B2A6213C40076E536 /* Charger.swift in Sources */,
 				CBDB5E552A6185490076E536 /* Chargeable.swift in Sources */,
+				CBDB5E5D2A62166F0076E536 /* Porterble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
