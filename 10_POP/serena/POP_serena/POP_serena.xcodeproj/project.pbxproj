@@ -10,6 +10,7 @@
 		D26B73A92A620D04000332B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B73A82A620D04000332B1 /* main.swift */; };
 		D26B73B02A620D11000332B1 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B73AF2A620D11000332B1 /* Protocol.swift */; };
 		D26B73B22A620F2A000332B1 /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B73B12A620F2A000332B1 /* MacBook.swift */; };
+		D26B73B42A62108E000332B1 /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B73B32A62108E000332B1 /* Charger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		D26B73A82A620D04000332B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D26B73AF2A620D11000332B1 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		D26B73B12A620F2A000332B1 /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
+		D26B73B32A62108E000332B1 /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D26B73A82A620D04000332B1 /* main.swift */,
 				D26B73AF2A620D11000332B1 /* Protocol.swift */,
 				D26B73B12A620F2A000332B1 /* MacBook.swift */,
+				D26B73B32A62108E000332B1 /* Charger.swift */,
 			);
 			path = POP_serena;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				D26B73A92A620D04000332B1 /* main.swift in Sources */,
 				D26B73B22A620F2A000332B1 /* MacBook.swift in Sources */,
+				D26B73B42A62108E000332B1 /* Charger.swift in Sources */,
 				D26B73B02A620D11000332B1 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
