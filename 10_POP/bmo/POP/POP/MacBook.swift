@@ -5,7 +5,7 @@
 //  Created by 비모 on 2023/07/14.
 //
 
-struct MacBook {
+struct MacBook: Portable {
     private let allowChargeWatt: Watt
     private var currentBatteryCapacity: WattPerHour
     private let maximumBatteryCapacity: WattPerHour = 100
