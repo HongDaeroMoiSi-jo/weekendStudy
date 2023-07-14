@@ -35,3 +35,11 @@ let 아이폰고속충전기 = Charger(maximumWattPerHour: 18)
 let 아이패드충전기 = Charger(maximumWattPerHour: 30)
 let 맥북충전기1 = Charger(maximumWattPerHour: 96)
 let 맥북충전기2 = Charger(maximumWattPerHour: 106)
+
+//MARK: - STEP 2
+let 맥북 = MacBook(currentBattery: 50)
+맥북.chargeBattery(charger: 애플워치충전기)
+맥북.chargeBattery(charger: 아이폰고속충전기)
+맥북.chargeBattery(charger: 아이패드충전기)
+맥북.chargeBattery(charger: 맥북충전기1)
+맥북.chargeBattery(charger: 맥북충전기2)
