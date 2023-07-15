@@ -5,11 +5,17 @@
 //  Created by 1 on 2023/07/15.
 //
 
-protocol Charger {
-    typealias Watt = Int
-    typealias WattPerHour = Int
+import Foundation
+
+
+struct Charger: GiveCharger {
+    var maximumWattPerHour: WattPerHour
     
-    var maximumWattPerHour: WattPerHour { get set }
-    
-    func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour
+    func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour {
+        if chargeableWattPerHour <= maximumWattPerHour {
+            return chargeableWattPerHour
+        } else {
+            return maximumWattPerHour
+        }
+    }
 }
