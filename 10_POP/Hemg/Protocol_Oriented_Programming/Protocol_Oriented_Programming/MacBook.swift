@@ -5,6 +5,17 @@
 //  Created by 1 on 2023/07/15.
 //
 
-protocol MacBook {
+struct MacBook {
+    let chargeWatt: Charger.Watt
+    let currentBattery: Charger.WattPerHour
+    let maxBattery: Charger.WattPerHour
     
+    func chargeBattery(charger: Chargeable) {
+        var time: Double = 0.0
+        while currentBattery < maxBattery {
+            currentBattery += charger.convert(chargeableWattPerHour: charger.maximumWattPerHour)
+            time += 1.0
+        }
+        print("난 몇초야?\(time)")
+    }
 }
