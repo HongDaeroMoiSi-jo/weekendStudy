@@ -5,7 +5,9 @@
 //  Created by 1 on 2023/07/15.
 //
 
-struct MacBook {
+import Foundation
+
+struct MacBook: Portable {
     let chargeWatt: Charger.Watt
     var currentBattery: Charger.WattPerHour
     let maxBattery: Charger.WattPerHour
@@ -13,11 +15,13 @@ struct MacBook {
     mutating func chargeBattery(charger: GiveCharger) {
         var time: Double = 0.0
         currentBattery = 0
+
         while currentBattery < maxBattery {
             currentBattery += charger.convert(chargeableWattPerHour: charger.maximumWattPerHour)
             time += 1.0
         }
-        print("난 몇초야?\(time)")
+    
+        print("시간은?? \(time)")
     }
 }
 

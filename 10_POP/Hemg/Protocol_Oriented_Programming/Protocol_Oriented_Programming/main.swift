@@ -7,14 +7,19 @@
 
 import Foundation
 
-let 햄맥 = Charger(maximumWattPerHour: 5)
-let 비맥 = Charger(maximumWattPerHour: 10)
-let 훈맥 = Charger(maximumWattPerHour: 45)
-let 세맥 = Charger(maximumWattPerHour: 70)
+let 햄지발전기 = Charger(maximumWattPerHour: 5)
+let 비모발전기 = Charger(maximumWattPerHour: 10)
+let 훈맥밥 = Charger(maximumWattPerHour: 45)
+let 송발전기 = Charger(maximumWattPerHour: 70)
 
-var macBook = MacBook(chargeWatt: 100, currentBattery: 0, maxBattery: 100)
+var macBook = MacBook(chargeWatt: 10, currentBattery: 0, maxBattery: 100)
+var bag = Bag()
 
-macBook.chargeBattery(charger: 햄맥)
-macBook.chargeBattery(charger: 비맥)
-macBook.chargeBattery(charger: 훈맥)
-macBook.chargeBattery(charger: 세맥)
+macBook.chargeBattery(charger: 햄지발전기)
+macBook.chargeBattery(charger: 비모발전기)
+macBook.chargeBattery(charger: 훈맥밥)
+macBook.chargeBattery(charger: 송발전기)
+bag.put(item: 햄지발전기)
+bag.put(item: 비모발전기)
+bag.put(item: 훈맥밥)
+bag.put(item: 송발전기)
