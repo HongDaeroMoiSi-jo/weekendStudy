@@ -7,11 +7,12 @@
 
 struct MacBook {
     let chargeWatt: Charger.Watt
-    let currentBattery: Charger.WattPerHour
+    var currentBattery: Charger.WattPerHour
     let maxBattery: Charger.WattPerHour
     
-    func chargeBattery(charger: Chargeable) {
+    mutating func chargeBattery(charger: GiveCharger) {
         var time: Double = 0.0
+        currentBattery = 0
         while currentBattery < maxBattery {
             currentBattery += charger.convert(chargeableWattPerHour: charger.maximumWattPerHour)
             time += 1.0
@@ -19,3 +20,4 @@ struct MacBook {
         print("난 몇초야?\(time)")
     }
 }
+

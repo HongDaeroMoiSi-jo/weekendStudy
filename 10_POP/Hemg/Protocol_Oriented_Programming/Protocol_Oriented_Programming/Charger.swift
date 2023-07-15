@@ -5,9 +5,6 @@
 //  Created by 1 on 2023/07/15.
 //
 
-import Foundation
-
-
 struct Charger: GiveCharger {
     var maximumWattPerHour: WattPerHour
     
