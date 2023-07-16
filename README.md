@@ -89,3 +89,19 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek08%5D-TableView,-JSON)
 
 ---
+
+### 📅 2023.07.08 (토) Week#9
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **Concurrency Programming** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek09%5D-Concurrency-Programming)
+
+---
+
+### 📅 2023.07.15 (토) Week#10
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **Protocol Oriented Programming** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek10%5D-Protocol-Oriented-Programming)
+
+---
