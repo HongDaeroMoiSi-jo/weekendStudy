@@ -113,3 +113,11 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek11%5D-Responder-Chain)
 
 ---
+
+### 📅 2023.07.29 (토) Week#12
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **Collection View** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek12%5D-Collection-View)
+
+---
