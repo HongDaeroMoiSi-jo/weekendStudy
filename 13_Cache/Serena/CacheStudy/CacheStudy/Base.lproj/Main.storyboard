@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CacheStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mvT-f7-7Vm">
+                                <rect key="frame" x="96.666666666666686" y="91" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JgC-Fp-vso"/>
+                                    <constraint firstAttribute="height" constant="200" id="ecK-yF-2iX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLE-Xv-hsp" userLabel="첫 번째 이미지 받아오기">
+                                <rect key="frame" x="104" y="307" width="185" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Oq3-02-aXs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="첫 번째 이미지 받아오기">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.7177519202" green="0.71900755169999997" blue="0.61629301309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedFirstImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAl-X7-psn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gvv-Dh-JOh">
+                                <rect key="frame" x="96.666666666666686" y="379" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IeN-Wf-Gqd"/>
+                                    <constraint firstAttribute="width" constant="200" id="Iqq-2E-K4W"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSh-wz-eE6">
+                                <rect key="frame" x="32" y="752" width="329" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hy6-jX-a30"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="캐시 비우기">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.62758409979999996" green="0.63581407069999996" blue="0.60509538650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedClearCache:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceJ-Fe-t5s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaU-tQ-5bK">
+                                <rect key="frame" x="32" y="686" width="329" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jlh-Wu-hrF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="이미지 초기화">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.57823771239999999" green="0.69959646460000002" blue="0.67440348859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedClearImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6t2-B8-ba6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssn-ue-0No">
+                                <rect key="frame" x="104" y="595" width="185" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m36-Kj-ZmC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="두 번째 이미지 받아오기">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.74730199580000001" green="0.5866020918" blue="0.55248624089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedSecondImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0R-mH-hNm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vLE-Xv-hsp" firstAttribute="top" secondItem="mvT-f7-7Vm" secondAttribute="bottom" constant="16" id="32T-gP-ltx"/>
+                            <constraint firstItem="LaU-tQ-5bK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="6yu-yC-SaV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kSh-wz-eE6" secondAttribute="trailing" constant="32" id="7yK-Si-t4a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kSh-wz-eE6" secondAttribute="bottom" constant="16" id="AKd-Zu-Hun"/>
+                            <constraint firstItem="vLE-Xv-hsp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9I-wf-yvV"/>
+                            <constraint firstItem="kSh-wz-eE6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="HGZ-95-xuN"/>
+                            <constraint firstItem="gvv-Dh-JOh" firstAttribute="top" secondItem="vLE-Xv-hsp" secondAttribute="bottom" constant="32" id="Pre-68-GLE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaU-tQ-5bK" secondAttribute="trailing" constant="32" id="a7r-bM-BOc"/>
+                            <constraint firstItem="mvT-f7-7Vm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g7s-Bj-TYW"/>
+                            <constraint firstItem="gvv-Dh-JOh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gzj-S6-hpN"/>
+                            <constraint firstItem="kSh-wz-eE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqU-0i-jg3"/>
+                            <constraint firstItem="mvT-f7-7Vm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="lgj-zI-kmF"/>
+                            <constraint firstItem="kSh-wz-eE6" firstAttribute="top" secondItem="LaU-tQ-5bK" secondAttribute="bottom" constant="16" id="nGj-az-H7j"/>
+                            <constraint firstItem="Ssn-ue-0No" firstAttribute="top" secondItem="gvv-Dh-JOh" secondAttribute="bottom" constant="16" id="ntm-at-Lhd"/>
+                            <constraint firstItem="Ssn-ue-0No" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r3g-J3-cs7"/>
+                            <constraint firstItem="LaU-tQ-5bK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="woi-Gi-hm8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clearCache" destination="kSh-wz-eE6" id="ZEc-aD-B1O"/>
+                        <outlet property="clearImage" destination="LaU-tQ-5bK" id="kVW-EB-sDh"/>
+                        <outlet property="firstButton" destination="vLE-Xv-hsp" id="LwF-yH-Shm"/>
+                        <outlet property="firstImage" destination="mvT-f7-7Vm" id="zPe-zb-ZC0"/>
+                        <outlet property="secondButton" destination="Ssn-ue-0No" id="tMU-Y9-wgk"/>
+                        <outlet property="secondImage" destination="gvv-Dh-JOh" id="YnG-6Q-auo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
