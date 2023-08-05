@@ -7,9 +7,11 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
-    let cache = URLCache.shared
+class ImageCache {
+    static let shared = NSCache<NSString, UIImage>()
+}
 
+final class ViewController: UIViewController {
     @IBOutlet weak var firstImageView: UIImageView!
     @IBOutlet weak var secondImageView: UIImageView!
     
@@ -33,17 +35,15 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func tapClearCacheButton(_ sender: UIButton) {
-        cache.removeAllCachedResponses()
+        ImageCache.shared.removeAllObjects()
     }
 }
 
 extension ViewController {
     func fetchImage(from urlString: String, apply imageView: UIImageView) {
         guard let url = URL(string: urlString) else { return }
-        let request = URLRequest(url: url)
         
-        if let data = self.cache.cachedResponse(for: request)?.data,
-           let image = UIImage(data: data) {
+        if let image = ImageCache.shared.object(forKey: urlString as NSString) {
             print("캐시된 데이터가 있습니다.")
             DispatchQueue.main.async {
                 imageView.image = image
@@ -65,8 +65,7 @@ extension ViewController {
                 guard let image = UIImage(data: data) else { return }
                 
                 // cache 저장
-                let cachedData = CachedURLResponse(response: httpResponse, data: data)
-                self.cache.storeCachedResponse(cachedData, for: request)
+                ImageCache.shared.setObject(image, forKey: urlString as NSString)
                 
                 DispatchQueue.main.async {
                     imageView.image = image
