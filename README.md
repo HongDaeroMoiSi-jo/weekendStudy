@@ -121,3 +121,19 @@
 [WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek12%5D-Collection-View)
 
 ---
+
+### 📅 2023.08.05 (토) Week#13
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모, 민섭
+
+#### [금주 실험 주제🧑🏻‍🔬] **Cache** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek13%5D-Cache)
+
+---
+
+### 📅 2023.08.12 (토) Week#14
+###### 👨‍👩‍👦‍👦 참여자 : Hemg, hoon, Serena, 비모
+
+#### [금주 실험 주제🧑🏻‍🔬] **KeyChain** <br/>
+[WIki URL](https://github.com/HongDaeroMoiSi-jo/weekendStudy/wiki/%5Bweek14%5D-KeyChain)
+
+---
