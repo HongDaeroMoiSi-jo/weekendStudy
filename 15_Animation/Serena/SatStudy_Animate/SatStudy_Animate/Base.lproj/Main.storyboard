@@ -16,48 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIM-AD-6Gu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="oIM-AD-6Gu">
                                 <rect key="frame" x="76.666666666666686" y="111" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oIM-AD-6Gu" secondAttribute="height" multiplier="1:1" id="HXZ-SB-Nan"/>
                                     <constraint firstAttribute="width" constant="240" id="QSo-yE-jpB"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hti-iW-hUk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hti-iW-hUk">
                                 <rect key="frame" x="118" y="444" width="157" height="34.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="157" id="H3J-YY-PAk"/>
+                                    <constraint firstAttribute="height" constant="34.329999999999998" id="yoP-8Z-mLM"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="애러를 만난 야곰"/>
+                                <buttonConfiguration key="configuration" style="plain" title="에러를 만난 세레나"/>
+                                <connections>
+                                    <action selector="touchUpErrorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsy-A2-AeC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGJ-Bz-qLS">
                                 <rect key="frame" x="118" y="504.33333333333331" width="157" height="34.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="157" id="nc7-W4-rUI"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="새 맥북을 산 야곰"/>
+                                <buttonConfiguration key="configuration" style="plain" title="새 맥북을 산 세레나"/>
+                                <connections>
+                                    <action selector="touchUpNewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wg9-88-qA3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-V4-btR">
                                 <rect key="frame" x="118" y="567.66666666666663" width="157" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="157" id="mhI-Jk-hcb"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Custom"/>
+                                <buttonConfiguration key="configuration" style="plain" title="깜박이는 세레나"/>
+                                <connections>
+                                    <action selector="touchUpCustomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAU-wR-LI5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtV-cD-35Z">
                                 <rect key="frame" x="118" y="632" width="157" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="157" id="ckv-6A-mi8"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="되돌리기"/>
+                                <buttonConfiguration key="configuration" style="plain" title="되돌리기"/>
+                                <connections>
+                                    <action selector="touchUpReturn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QsA-HA-FmB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,6 +99,14 @@
                             <constraint firstItem="SKX-V4-btR" firstAttribute="centerX" secondItem="Hti-iW-hUk" secondAttribute="centerX" id="rCM-P9-04P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customButton" destination="SKX-V4-btR" id="lNu-am-hCf"/>
+                        <outlet property="errorButton" destination="Hti-iW-hUk" id="SKg-SY-YBH"/>
+                        <outlet property="imageCenterConstraints" destination="3Kz-4d-k5d" id="DY2-t4-L8O"/>
+                        <outlet property="myImage" destination="oIM-AD-6Gu" id="vpM-fT-NIW"/>
+                        <outlet property="newButton" destination="pGJ-Bz-qLS" id="bK3-11-O0g"/>
+                        <outlet property="returnButton" destination="HtV-cD-35Z" id="51z-nz-K6L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,14 +114,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image" width="340" height="473"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
