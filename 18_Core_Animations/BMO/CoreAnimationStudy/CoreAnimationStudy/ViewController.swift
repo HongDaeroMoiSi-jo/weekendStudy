@@ -8,24 +8,38 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var juiceView: CustomView!
+    private lazy var tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(fillAnimation))
+    private var isTapped = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        juiceView.addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    @objc private func fillAnimation() {
+        let fillAnimation = CABasicAnimation(keyPath: "path")
+        let melonSoda = juiceView.melonSodaLiquidLayer
+        let maskingLayer = juiceView.maskingLayer
+        let drinkHeight = 30
+        let newRect = CGRect(x: 90, y: 200 + (120 - drinkHeight), width: 160, height: drinkHeight)
+        
+        if isTapped {
+            isTapped = false
+            fillAnimation.fromValue = melonSoda.path
+            fillAnimation.toValue = UIBezierPath(rect: newRect).cgPath
+
+        } else {
+            isTapped = true
+            fillAnimation.fromValue = UIBezierPath(rect: newRect).cgPath
+            fillAnimation.toValue = melonSoda.path
+        }
+        
+        fillAnimation.fillMode = .forwards
+        fillAnimation.isRemovedOnCompletion = false
+        fillAnimation.duration = 1
+        
+        melonSoda.add(fillAnimation, forKey: "path")
     }
     
-//    func drawCup() {
-//        let cupLayer = CAShapeLayer()
-//        let cupPath = UIBezierPath()
-//
-//        cupPath.move(to: CGPoint(x: 100, y: 100))
-//        cupPath.addLine(to: CGPoint(x: 120, y: 300))
-//        cupPath.addQuadCurve(to: CGPoint(x: 220, y: 300), controlPoint: CGPoint(x: 170, y: 300 + 30))
-//        cupPath.addLine(to: CGPoint(x: 240, y: 100))
-//
-//        cupLayer.path = cupPath.cgPath
-//        cupLayer.strokeColor = UIColor.gray.cgColor
-//        cupLayer.lineWidth = 5
-//        cupLayer.fillColor = .none
-//
-//        view.layer.addSublayer(cupLayer)
-//    }
 }
