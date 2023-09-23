@@ -53,6 +53,21 @@ final class ViewController: UIViewController {
         }
     }
     
+    @IBAction func simuLoginAction(_ sender: UIButton) {
+        UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("loginWithKakaoAccount() success.")
+                _ = oauthToken
+                
+                self.setUserInfo()
+            }
+        }
+    }
+    
+    
     @IBAction func logoutAction(_ sender: UIButton) {
         UserApi.shared.logout{(error) in
             if let error = error {
