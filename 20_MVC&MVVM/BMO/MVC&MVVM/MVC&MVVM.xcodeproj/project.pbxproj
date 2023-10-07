@@ -13,6 +13,7 @@
 		CB6D48432AD0DAB30032B81D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6D48412AD0DAB30032B81D /* Main.storyboard */; };
 		CB6D48452AD0DAB40032B81D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6D48442AD0DAB40032B81D /* Assets.xcassets */; };
 		CB6D48482AD0DAB40032B81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6D48462AD0DAB40032B81D /* LaunchScreen.storyboard */; };
+		CB6D48502AD0F4E30032B81D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6D484F2AD0F4E30032B81D /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CB6D48442AD0DAB40032B81D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB6D48472AD0DAB40032B81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB6D48492AD0DAB40032B81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6D484F2AD0F4E30032B81D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CB6D483B2AD0DAB30032B81D /* AppDelegate.swift */,
 				CB6D483D2AD0DAB30032B81D /* SceneDelegate.swift */,
 				CB6D483F2AD0DAB30032B81D /* ViewController.swift */,
+				CB6D484F2AD0F4E30032B81D /* ViewModel.swift */,
 				CB6D48412AD0DAB30032B81D /* Main.storyboard */,
 				CB6D48442AD0DAB40032B81D /* Assets.xcassets */,
 				CB6D48462AD0DAB40032B81D /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				CB6D48402AD0DAB30032B81D /* ViewController.swift in Sources */,
 				CB6D483C2AD0DAB30032B81D /* AppDelegate.swift in Sources */,
+				CB6D48502AD0F4E30032B81D /* ViewModel.swift in Sources */,
 				CB6D483E2AD0DAB30032B81D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
