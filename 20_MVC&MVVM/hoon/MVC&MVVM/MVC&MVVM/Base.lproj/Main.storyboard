@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심리 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nho-aW-Rtw">
+                                <rect key="frame" x="110" y="150" width="155" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuP-Ab-CPv">
+                                <rect key="frame" x="40" y="306" width="125" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="ZHq-BP-saD"/>
+                                    <constraint firstAttribute="width" constant="125" id="re3-Ny-cbL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="책"/>
+                                <connections>
+                                    <action selector="leftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1v-Ps-O0B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbE-TT-pct">
+                                <rect key="frame" x="210" y="306" width="125" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="0IY-vz-6LI"/>
+                                    <constraint firstAttribute="width" constant="125" id="aSj-Ic-srH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="고기"/>
+                                <connections>
+                                    <action selector="rightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKD-D5-vz7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 눌러보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alc-TM-h2y">
+                                <rect key="frame" x="108.66666666666669" y="592" width="158" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nho-aW-Rtw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3CR-H6-4LU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sbE-TT-pct" secondAttribute="trailing" constant="40" id="8bV-2o-hcy"/>
+                            <constraint firstItem="TuP-Ab-CPv" firstAttribute="top" secondItem="nho-aW-Rtw" secondAttribute="bottom" constant="115" id="9HO-bb-zgG"/>
+                            <constraint firstItem="sbE-TT-pct" firstAttribute="top" secondItem="nho-aW-Rtw" secondAttribute="bottom" constant="115" id="G4N-Sr-DpN"/>
+                            <constraint firstItem="TuP-Ab-CPv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HMK-5G-aYb"/>
+                            <constraint firstItem="sbE-TT-pct" firstAttribute="leading" secondItem="TuP-Ab-CPv" secondAttribute="trailing" constant="45" id="d2M-w8-1QH"/>
+                            <constraint firstItem="TuP-Ab-CPv" firstAttribute="top" secondItem="nho-aW-Rtw" secondAttribute="bottom" constant="115" id="kd8-8S-hyY"/>
+                            <constraint firstItem="alc-TM-h2y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oen-xi-qIw"/>
+                            <constraint firstItem="alc-TM-h2y" firstAttribute="top" secondItem="TuP-Ab-CPv" secondAttribute="bottom" constant="134" id="sZ5-qp-RgE"/>
+                            <constraint firstItem="nho-aW-Rtw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tId-oO-4Na"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="printLabel" destination="alc-TM-h2y" id="bGO-n5-j0s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27.339901477832512"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
